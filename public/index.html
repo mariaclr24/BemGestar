@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BemGestar - A Sua Clínica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Imagem/logo.jpg" alt="BemGestar Logo" width="50" height="50" />
+            <strong>BemGestar</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.html">Registar</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <section class="hero text-center text-white p-5 rounded mb-5">
+        <div class="title-bg">
+          <h1>Bem-vindo à Clínica <strong>BemGestar</strong>!</h1>
+          <p class="lead mt-3">Cada etapa da sua gravidez acompanhada com carinho e profissionalismo.</p>
+          <a href="#terapias" class="btn btn-light btn-lg mt-3">Conheça as nossas terapias</a>
+        </div>
+      </section>
+
+      <section id="clinicas" class="mb-5">
+        <h2 class="text-center mb-4">As Nossas Clínicas</h2>
+        <div id="clinicas-list" class="row g-4">
+        </div>
+      </section>
+
+      <section id="terapias" class="mb-5">
+        <h2 class="text-center mb-4">As Nossas Terapias</h2>
+        <div id="terapias-list" class="row g-4">
+        </div>
+      </section>
+
+      <section id="comentarios" class="testemunhos p-5 bg-light rounded">
+        <h2 class="text-center mb-4">O que dizem sobre nós</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <blockquote>
+              <p>"Excelente atendimento durante toda a gravidez."</p>
+              <footer class="blockquote-footer">Maria S.</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-5">
+            <blockquote>
+              <p>"Equipa maravilhosa, sempre atenciosa e profissional."</p>
+              <footer class="blockquote-footer">Joana R.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-light py-4 text-center">
+      <p>&copy; 2025 BemGestar. Todos os direitos reservados.</p>
+      <p>Contato: <a href="mailto:apoio@bemgestar.com">apoio@bemgestar.com</a> | Telefone: +351 933 856 745</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>

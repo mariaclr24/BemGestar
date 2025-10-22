@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Questionário Pós-Aula</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <script src="JS/validar_login.js"></script>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="dashboard_cliente.html">
+          <img src="Imagem/logo.jpg" alt="Logo" width="40" height="40">
+          BemGestar
+        </a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="dashboard_cliente.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="aulas.html">Aulas</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Questionário Pós-Aula</h2>
+    <form id="formQuestionario" class="border p-4 rounded bg-light">
+      <div class="mb-3">
+        <label for="classificacao_geral" class="form-label">Classificação Geral (1–5)</label>
+        <input type="number" name="classificacao_geral" class="form-control" min="1" max="5" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">A aula foi clara?</label>
+        <select name="aula_foi_clara" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">O profissional acompanhou durante a aula?</label>
+        <select name="empatia_profissional" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="colocou_duvidas" class="form-label">Colocou dúvidas?</label>
+        <select name="colocou_duvidas" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+          <option value="Não precisei">Não precisei</option>
+        </select>
+      </div>
+      
+      <div class="mb-3">
+        <label for="ajudou_bem_estar" class="form-label">A aula ajudou no bem-estar?</label>
+        <select name="ajudou_bem_estar" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+          <option value="Não se aplica">Não se aplica</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="contribuicao_positiva" class="form-label">Contribuição positiva da sessão para o seu estado físico (1–5)</label>
+        <input type="number" name="contribuicao_positiva" class="form-control" min="1" max="5" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="nivel_esforco" class="form-label">Nível de esforço físico (1–10)</label>
+        <input type="number" name="nivel_esforco" class="form-control" min="1" max="10" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Sentiu dor muscular?</label>
+        <select name="dor_muscular" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Sentiu desconforto durante a aula?</label>
+        <select name="sentiu_conforto" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="fadiga" class="form-label">Fadiga após aula (1–10)</label>
+        <input type="number" name="fadiga" class="form-control" min="1" max="10" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="coordenacao" class="form-label">Conseguiu acompanhar os exercícios? (1–5)</label>
+        <input type="number" name="coordenacao" class="form-control" min="1" max="5" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Teve dificuldades de equilíbrio?</label>
+        <select name="equilibrio" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentários adicionais</label>
+        <textarea name="comentarios" class="form-control" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100" id="btnSubmeter">Enviar Questionário</button>
+      <div id="mensagem" class="mt-3 text-center"></div>
+    </form>
+  </main>
+
+  <script src="JS/questionario.js"></script>
+</body>
+</html>

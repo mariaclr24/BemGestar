@@ -1,0 +1,22 @@
+#calendar {
+  max-width: 1000px;
+  margin: 40px auto;
+  min-height: 600px;
+}
+
+.fc-event {
+  background-color: #0d6efd !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.fc-daygrid-event-dot {
+  border-color: #0d6efd !important;
+}
+
+.fc-daygrid-day:hover {
+  background-color: #f8f9fa;
+}

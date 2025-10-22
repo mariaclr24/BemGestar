@@ -1,0 +1,8 @@
+form input,
+form select {
+  font-size: 1rem;
+}
+
+#mensagem .alert {
+  font-size: 0.95rem;
+}

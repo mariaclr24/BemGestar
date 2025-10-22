@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BemGestar - Aulas Agendadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="dashboard_cliente.html">
+            <img src="Imagem/logo.jpg" alt="BemGestar Logo" width="40" height="40" class="d-inline-block align-text-top">
+            BemGestar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="dashboard_cliente.html">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="aulas.html">Aulas</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Aulas Agendadas</h2>
+      <div id="scheduledContainer" class="row"></div>
+      <div id="noSchedules" class="text-center text-muted"></div>
+    </main>
+
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2025 BemGestar. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@bemgestar.com">contato@bemgestar.com</a> | Telefone: (11) 1234-5678</p>
+        <p>Siga-nos:
+          <a href="#" target="_blank">Facebook</a> |
+          <a href="#" target="_blank">Instagram</a> |
+          <a href="#" target="_blank">Twitter</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="JS/agendados.js"></script>
+  </body>
+</html>

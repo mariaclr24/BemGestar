@@ -1,0 +1,11 @@
+.card .form-group label {
+  font-weight: 500;
+}
+
+.card-body p span {
+  font-weight: 600;
+}
+
+#edicaoCampos input {
+  font-size: 1rem;
+}
